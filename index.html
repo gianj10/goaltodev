@@ -10,16 +10,52 @@
 <body>
     <h1 id="flip">Web experience</h1>
         <div class="container">
-            <p>Blog</p>
-            <p>Phenopeople</p>
+          <div class="site-bar">
+              <h1 id="left-header">Phenomaly</h1>
+                <div class="classname">
+                    <p>Webpage</p>
+                    <p>Youtube</p>
+                      </div>
+                        <button id="btnjn">Join us</button>
+                          </div>
+          
+          <div>
+            <div class="leftbar"></div>
+            <div class="content"></div>
+            <div class="sidefooter"></div>
+          </div>
         </div>
 </body>
-<script> 
+
+
+
+
+
+
+
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var flipButton = document.getElementById("flip");
+    var container = document.querySelector(".container");
+
+    flipButton.addEventListener("click", function() {
+      if (container.style.display === "none" || container.style.display === "") {
+         container.style.display = "block";
+      } else {
+        container.style.display = "none";
+      }
+    });
+  });
+</script>
+
+<!-- <script> 
     $(document).ready(function(){
       $("#flip").click(function(){
         $(".container").slideToggle("slow");
       });
     });
-    </script>
+    </script> -->
 
 </html>
