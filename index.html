@@ -1,30 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <link href="./resources/css/index.css" type="text/css" rel="stylesheet">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link href="./resources/css/index.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Document</title>
 </head>
+
 <body>
-    <h1 id="flip">Web experience</h1>
-        <div class="container">
-          <div class="site-bar">
-              <h1 id="left-header">Phenomaly</h1>
-                <div class="classname">
-                    <p>Webpage</p>
-                    <p>Youtube</p>
-                      </div>
-                        <a href="https://www.behance.net/gallery/62972475/Phenomaly-brand-web-design"><button id="btnjn">Join us</button></a>
-                          </div>
-          
-            <div>
-              <div class="leftbar"></div>
-                <div class="content"></div>
-                  <div class="sidefooter"></div>
-            </div>
-        </div>
+   <div class="container">
+    <div class="site-bar">
+      <h1 id="left-header">Phenomaly</h1>
+      <div class="classname">
+        <p>Webpage</p>
+        <p>Youtube</p>
+      </div>
+      <a href="https://www.behance.net/gallery/62972475/Phenomaly-brand-web-design"><button id="btnjn">Join
+          us</button></a>
+    </div>
+   </div>
+   
+
+    <div class="dividerc">
+      <aside class="leftbar"></aside>
+      <div class="content"></div>
+      
+      </div>
+    </div>
+
+  <div class="sidefooter">
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-instagram"></a>
+
 </body>
 
 
@@ -33,16 +44,14 @@
 
 
 
-
-
 <script>
-  document.addEventListener("DOMContentLoaded", function() {
+  document.addEventListener("DOMContentLoaded", function () {
     var flipButton = document.getElementById("flip");
     var container = document.querySelector(".container");
 
-    flipButton.addEventListener("click", function() {
+    flipButton.addEventListener("click", function () {
       if (container.style.display === "none" || container.style.display === "") {
-         container.style.display = "block";
+        container.style.display = "block";
       } else {
         container.style.display = "none";
       }
