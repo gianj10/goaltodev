@@ -4,67 +4,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <link href="./resources/css/index.css" type="text/css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
   <title>Document</title>
 </head>
 
 <body>
-   <div class="container">
-    <div class="site-bar">
-      <h1 id="left-header">Phenomaly</h1>
-      <div class="classname">
-        <p>Webpage</p>
-        <p>Youtube</p>
+  <div class="main-container">
+    <div class="header">
+      <div class="site-bar">
+        <h1 id="left-header">Phenomaly</h1>
+        <div class="classname">
+          <p>Blog</p>
+          <p>Phenopeople</p>
+        </div>
+        <a href="https://www.behance.net/gallery/62972475/Phenomaly-brand-web-design"><button id="btnjn">Join
+            us</button></a>
       </div>
-      <a href="https://www.behance.net/gallery/62972475/Phenomaly-brand-web-design"><button id="btnjn">Join
-          us</button></a>
+     </div>
+     
+        <div class="dividerc">
+        <aside class="leftbar">
+          <swiper-container class="mySwiper" direction="vertical" pagination="true" pagination-clickable="true">
+            <swiper-slide>Slide 1</swiper-slide>
+            <swiper-slide>Slide 2</swiper-slide>
+            <swiper-slide>Slide 3</swiper-slide>
+            <swiper-slide>Slide 4</swiper-slide>
+            <swiper-slide>Slide 5</swiper-slide>
+            <swiper-slide>Slide 6</swiper-slide>
+            <swiper-slide>Slide 7</swiper-slide>
+            <swiper-slide>Slide 8</swiper-slide>
+            <swiper-slide>Slide 9</swiper-slide>
+            </swiper-container>
+        </aside> 
+
+      <div id="content">content</div>
+      
+  
+    <div class="sidefooter">
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-instagram"></a>
     </div>
-   </div>
+  </div>
    
 
-    <div class="dividerc">
-      <aside class="leftbar"></aside>
-      <div class="content"></div>
-      
-      </div>
-    </div>
-
-  <div class="sidefooter">
-    <a href="#" class="fa fa-facebook"></a>
-    <a href="#" class="fa fa-twitter"></a>
-    <a href="#" class="fa fa-instagram"></a>
-
 </body>
-
-
-
-
-
-
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    var flipButton = document.getElementById("flip");
-    var container = document.querySelector(".container");
-
-    flipButton.addEventListener("click", function () {
-      if (container.style.display === "none" || container.style.display === "") {
-        container.style.display = "block";
-      } else {
-        container.style.display = "none";
-      }
-    });
-  });
-</script>
-
-<!-- <script> 
-    $(document).ready(function(){
-      $("#flip").click(function(){
-        $(".container").slideToggle("slow");
-      });
-    });
-    </script> -->
-
 </html>
