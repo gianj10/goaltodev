@@ -14,6 +14,7 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
+
   <title>Document</title>
 </head>
 
@@ -32,21 +33,24 @@
      </div>
      
         <div class="dividerc">
-        <aside class="leftbar">
-          <swiper-container class="mySwiper" direction="vertical" pagination="true" pagination-clickable="true">
-            <swiper-slide>Slide 1</swiper-slide>
-            <swiper-slide>Slide 2</swiper-slide>
-            <swiper-slide>Slide 3</swiper-slide>
-            <swiper-slide>Slide 4</swiper-slide>
-            <swiper-slide>Slide 5</swiper-slide>
-            <swiper-slide>Slide 6</swiper-slide>
-            <swiper-slide>Slide 7</swiper-slide>
-            <swiper-slide>Slide 8</swiper-slide>
-            <swiper-slide>Slide 9</swiper-slide>
-            </swiper-container>
-        </aside> 
+        
+        
 
-      <div id="content">content</div>
+
+
+      <div id="content">
+        <div class="pagewidth">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slide">slide 1</div>
+              </div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+            </div>
+          </div>
+      </div>
+      <div class="swiper-pagination"></div>
       
   
     <div class="sidefooter">
@@ -55,7 +59,19 @@
       <a href="#" class="fa fa-instagram"></a>
     </div>
   </div>
-   
+ 
+
+
 
 </body>
+
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    direction: "vertical",
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+</script>
 </html>
