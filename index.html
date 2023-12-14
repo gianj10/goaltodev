@@ -6,13 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./resources/css/index.css" type="text/css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,500;1,400&display=swap"
+    rel="stylesheet">
 
-  <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
 
   <title>Document</title>
@@ -21,42 +23,58 @@
 <body>
   <div class="main-container">
     <div class="header">
-      <div class="site-bar">
-        <h1 id="left-header">Phenomaly</h1>
-        <div class="classname">
-          <p>Blog</p>
-          <p>Phenopeople</p>
-        </div>
-        <a href="https://www.behance.net/gallery/62972475/Phenomaly-brand-web-design"><button id="btnjn">Join
-            us</button></a>
+      <h1 id="left-header">Phenomaly</h1>
+      <div class="classname">
+        <p>Blog</p>
+        <p>Phenopeople</p>
       </div>
-     </div>
-     
-        <div class="dividerc">
-        
-        
+      <a href="https://www.behance.net/gallery/62972475/Phenomaly-brand-web-design" id="btnjn">Join
+        us</a>
+
+    </div>
+
+    <div class="dividerc">
+      <aside class="aside">
+        <div class="swiper-pagination"></div>
+      </aside>
+
       <div id="content">
         <div class="pagewidth">
           <div class="swiper mySwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <div class="slide">slide 1</div>
+                <div class="body-content">
+                  <p class="pre-heading">
+                    noun / phe - no - ma - ly \ fe ' na - me - li \
+                  </p>
+                  <h1>A occurence / object / sight that is <span class="highlighted">both</span> a phenomenon and an
+                    anomaly.</h1>
+                  <div class="sub-body-content">
+                    <p class="sub-heading">Dude...check out the puppies on that broad....wow, those are phenomaly good!
+                    </p>
+                    <p class="sub-heading1">#strange #unsual #rack #breast #super #weird #wow</p>
+                  </div>
+                </div>
               </div>
-              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">
+                <div class="slide2-content">
+                  <div class="left-content">Left content</div>
+                  <div class="right-content">Right content</div>
+                </div>
+              </div>
               <div class="swiper-slide">Slide 3</div>
             </div>
           </div>
+        </div>
+
+
+        <div class="sidefooter">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-instagram"></a>
+        </div>
       </div>
-      <div class="swiper-pagination"></div>
-      
-  
-    <div class="sidefooter">
-      <a href="#" class="fa fa-facebook"></a>
-      <a href="#" class="fa fa-twitter"></a>
-      <a href="#" class="fa fa-instagram"></a>
-    </div>
-  </div>
- 
+
 
 </body>
 
@@ -67,6 +85,11 @@
       el: ".swiper-pagination",
       clickable: true,
     },
+    mousewheel: {
+      enabled: true,
+      releaseOnEdges: false,
+      sensitivity: 10,
+    }
   });
 </script>
 
